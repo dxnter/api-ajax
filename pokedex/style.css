@@ -1,0 +1,29 @@
+*, h1{
+    font-family: sans-serif;
+}
+h1 {
+    margin-top: 300px;
+}
+p {
+    font-weight: bold;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);    
+    grid-template-areas: 
+    "section section section section section section section aside aside"
+}
+section {
+    grid-area: section;
+}
+h1:first-letter {
+    text-transform: capitalize;
+}
+ul li:first-letter {
+    text-transform: capitalize;
+}
+
+aside {
+    grid-area: aside;
+    margin-left: 50px;
+}
