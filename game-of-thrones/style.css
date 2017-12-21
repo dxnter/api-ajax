@@ -1,0 +1,36 @@
+* {
+    font-family: sans-serif;
+}
+body {
+    background-color: #272727;
+    color: white;
+}
+.wrapper {
+    margin-top: 50px;
+    grid-gap: 10px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
+    grid-template-areas:
+    "img img img img"
+    "section section section section"
+    "section section section section";
+}
+
+img {
+    width: 150px;
+    margin: auto;
+    border: 2px solid black;
+    border-radius: 40px;
+    background-color: #D72638;
+    padding: 40px;
+}
+
+section {
+    grid-area: section;
+    margin: 100px auto;
+    padding: 40px;
+    border: 3px solid black;
+    background-color: #D72638;
+    border-radius: 10px;
+}
